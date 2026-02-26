@@ -1,0 +1,117 @@
+* {
+  box-sizing: border-box;
+}
+body{
+    background-color: beige;
+}
+.contenedor{
+    display: flex;
+}
+
+h1{
+    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-style: italic;
+    margin-bottom: 2%;
+}
+
+header{
+    text-align: center;
+    z-index: 1000000;
+    position: sticky;
+    top: 0%;
+    width: 100%;
+    border-top-left-radius: 8%;
+    border-top-right-radius: 8%;
+    height: 70px;
+    background-color: rgb(194, 228, 211);
+}
+
+nav{
+    background-color: rgb(194, 228, 211);
+    display: flex;
+    width: 24%;
+    height: 500px;
+    flex-wrap: wrap;
+    z-index: 1000;
+    position: fixed;
+    left: 0%;
+    top: 12%;
+}
+
+nav>div{
+    margin-left: 25%;
+}
+div>div:hover{
+    transition: 0.5s ease-in;
+    transform: scale(1.1);
+}
+
+div{
+    margin: 20px;
+}
+
+main>.anuncios{
+    margin-left: 35%;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+
+.cuadrado-rosa{
+    margin-top: 10%;
+    background-color: rgb(162, 202, 182);
+    width: 80%;
+    height: 350px;
+    border-radius: 15%;
+    z-index: 100;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+main p{
+    margin: 4%;
+    text-align: center;
+    font-style: italic;
+}
+
+.cuadrado-rosa:hover{
+    transition: 0.5s ease-in;
+    transform: scale(1.2);
+    text-shadow: 5px 5px 10px black;
+}
+.cuadrado-rosa{
+    transition: 0.5s ease-out;
+    justify-content: center;
+}
+
+.cuadrado-rosa img{
+    width: 30%;
+    padding: 1%;
+    margin-top: 2%;
+}
+div button{
+    width: 50%;
+    height: 50px;
+    background-color: rgb(122, 174, 148);
+    border-color: rgb(162, 202, 182);
+    font-size: 20px;
+    border-radius: 50%;
+    margin-bottom: 2%;
+}
+
+nav img{
+    width: 40%;
+    border-radius: 50%;
+}
+
+h2{
+    text-decoration: underline;
+}
+
+
+footer{
+    position: sticky;
+    background-color: rgb(141, 204, 173);
+    text-align: center;
+    height: 30px;
+}
